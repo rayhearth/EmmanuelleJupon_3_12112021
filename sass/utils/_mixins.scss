@@ -1,3 +1,7 @@
 @mixin bg-gradiant {
     background: linear-gradient($colour-second, $colour-primary);
 }
+
+@mixin bg-search($colour:$bg-primary){
+    background: darken($colour, 5%);
+}
