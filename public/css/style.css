@@ -1,0 +1,108 @@
+/***** RESET *****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Shrikhand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-overflow: ellipsis;
+  display: flex;
+}
+
+h4 {
+  color: white;
+  font-family: "Shrikhand";
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.btn-cmd {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.btn-cmd a {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  padding: 15px 40px;
+  border-radius: 25px;
+}
+
+main {
+  padding: 30px 15px;
+}
+main .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .title i {
+  font-size: 26px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+header a i {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer h4 {
+  width: 100%;
+}
+footer ul {
+  margin-top: 20px;
+  list-style-type: none;
+}
+footer ul li {
+  line-height: 25px;
+}
+footer ul li a {
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s;
+}
+footer ul li a i {
+  width: 20px;
+  font-size: 12px;
+}
+footer ul li a:hover {
+  color: #99E2D0;
+}
+
+/*# sourceMappingURL=style.css.map */
