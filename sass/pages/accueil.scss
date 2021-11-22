@@ -1,6 +1,79 @@
 main{
+
+    /* SECTION SEARCH */
     .search{
         @include bg-search;
-        
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        padding: 40px 0;
+        color: $dark-grey;
+        font-size: 18px;
+        input {
+            border: none;
+            background: none;
+            font-weight: bold;
+            padding-left: 10px;
+            color: $dark-grey;
+            &::placeholder {
+              font-weight: bold;
+            }
+        }
+    }
+
+    /* SECTION INTRO */
+    .intro {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: $bg-primary;
+        padding: 50px 40px;
+        h2{
+            font-weight: bold;
+            padding: 0 60px;
+            text-align: center;
+        }
+        p{
+            padding: 25px 0;
+            text-align: center;
+        }
+
+    }
+
+    /* SECTION FONCTIONNEMENT */
+
+    .fonctionnement{
+        padding: 50px 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .container{
+            justify-content: center;
+            width: 450px;
+            article{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                background: $bg-primary;
+                margin: 20px 0;
+                padding: 30px;
+                border-radius: $radius;
+                @include art-shadow;
+                transition: all .4s;
+                cursor: pointer;
+                i{
+                    font-size: 20px;
+                    color: $dark-grey;
+                }
+                p{
+                    font-size: 20px;
+                }
+                &:hover{
+                    background: lighten($colour-primary, 30%);
+                }
+                
+            }
+        }
+
     }
 }

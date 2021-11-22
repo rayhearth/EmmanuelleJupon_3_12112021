@@ -5,3 +5,7 @@
 @mixin bg-search($colour:$bg-primary){
     background: darken($colour, 5%);
 }
+
+@mixin art-shadow($colour:$bg-primary, $size: $shadow-size){
+    box-shadow: $size darken($colour, 10%);
+}

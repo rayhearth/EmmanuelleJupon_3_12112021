@@ -23,8 +23,7 @@ h1 {
 
 h2 {
   font-size: 18px;
-  font-weight: 300;
-  text-transform: uppercase;
+  width: 100%;
 }
 
 h3 {
@@ -39,25 +38,92 @@ h4 {
   font-size: 20px;
 }
 
-.btn-cmd {
+.btn {
   display: flex;
   justify-content: center;
-  padding: 50px 0;
+  align-items: center;
 }
-.btn-cmd a {
+.btn a {
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   padding: 15px 40px;
   border-radius: 25px;
-}
-
-main .search {
-  background: #e9e9e9;
+  cursor: pointer;
 }
 
 main {
-  padding: 30px 15px;
+  /* SECTION SEARCH */
+  /* SECTION INTRO */
+  /* SECTION FONCTIONNEMENT */
 }
+main .search {
+  background: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding: 40px 0;
+  color: #353535;
+  font-size: 18px;
+}
+main .search input {
+  border: none;
+  background: none;
+  font-weight: bold;
+  padding-left: 10px;
+  color: #353535;
+}
+main .search input::placeholder {
+  font-weight: bold;
+}
+main .intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #f6f6f6;
+  padding: 50px 40px;
+}
+main .intro h2 {
+  font-weight: bold;
+  padding: 0 60px;
+  text-align: center;
+}
+main .intro p {
+  padding: 25px 0;
+  text-align: center;
+}
+main .fonctionnement {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main .fonctionnement .container {
+  justify-content: center;
+  width: 450px;
+}
+main .fonctionnement .container article {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #f6f6f6;
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0px 2px 4px 0px #dddddd;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+main .fonctionnement .container article i {
+  font-size: 20px;
+  color: #353535;
+}
+main .fonctionnement .container article p {
+  font-size: 20px;
+}
+main .fonctionnement .container article:hover {
+  background: #e4d5f6;
+}
+
 main .title {
   display: flex;
   justify-content: space-between;
