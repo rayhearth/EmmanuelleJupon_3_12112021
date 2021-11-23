@@ -1,8 +1,11 @@
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
+    img{
+        margin: 0 auto;
+    }
     a{
         i{
             font-size: 18px;

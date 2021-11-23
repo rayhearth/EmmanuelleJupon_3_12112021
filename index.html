@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Page d'acceuil de Ohmyfood!, un prestataire de commande de repas en ligne qui regrouppe les menus des meilleurs restaurants gastronomiques de la région parisienne.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Page d'acceuil de Ohmyfood!, un prestataire de commande de repas en ligne qui regrouppe les menus des meilleurs restaurants gastronomiques de la région parisienne."
+    />
     <title>Ohmyfood!</title>
 
     <!-- FONTS ------------------------------------------------>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
 
     <!--    RESPONSIVE EDGE------------------------------------>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,134 +35,152 @@
 
     <!--	CSS------------------------------------------------>
     <link rel="stylesheet" href="public/css/style.css" />
-</head>
-<body>
+  </head>
+
+
+  <body>
     <!-- HEADER -->
     <header>
-        <img src="./img/ohmyfood_logo.svg" alt="Logo du prestataire ohmyfood dans une écriture arrondie">
+      <img
+        src="./img/ohmyfood_logo.svg"
+        alt="Logo du prestataire ohmyfood dans une écriture arrondie"
+      />
     </header>
 
-
     <main>
+      <!-- SECTION SEARCH -->
+      <section class="search">
+        <i class="fas fa-map-marker-alt"></i>
+        <input type="search" placeholder="Paris, Belleville" />
+      </section>
 
-        <!-- SECTION SEARCH -->
-        <section class="search">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="search" placeholder="Paris, Belleville">
-        </section>
-    
-        <!-- SECTION INTRO -->
-    
-        <section class="intro">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <div class="btn">
-                <a href="#">Explorer nos restaurants</a>
-            </div>
-        </section>
-    
-        <!-- SECTION FONCTIONNEMENT -->
-        
-        <section class="fonctionnement">
-            <h2>Fonctionnement</h2>
-            <div class="container">
-                <article class="littlecards">
-                    <i class="fas fa-mobile-alt"></i>
-                    <p>Chosissez un restaurant</p>
-                </article>
-                <article class="littlecards">
-                    <i class="fas fa-list-ul"></i>
-                    <p>Composez votre menu</p>
-                </article>
-                <article class="littlecards">
-                    <i class="fas fa-store"></i>
-                    <p>Dégustez au restaurant</p>
-                </article>
-            </div>
-        </section>
-    
-        <!-- SECTION RESTAURANT -->
-    
-        <section class="restaurant">
-            <h2>Restaurants</h2>
-    
-            <div class="restcards">
-    
-                <article class="cards">
-                    <a href="palettedugout.html">
-                        <img src="./img/la_palette_gout.jpg" alt="photo d'une assiette contenant des filets de saumon et de la salade provenant du restaurant la palette du goût">
-                        <div class="legend">
-                            <div class="text">
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
-                            </div>
-                            <div class="hearth">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-    
-                <article class="cards">
-                    <a href="lanoteenchantee.html">
-                        <img src="./img/la-note-enchantee.jpg" alt="photo d'une assiette contenant des filets de poulet aux olives et ses pommes de terres provenant du restaurant la note enchantée">
-                        <div class="legend">
-                            <div class="text">
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>
-                            </div>
-                            <div class="hearth">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-    
-                <article class="cards">
-                    <a href="alafrancaise.html">
-                        <img src="./img/a_la_française.jpg" alt="photo d'une assiette contenant une tartine de chèvre chauds et ses épinards provenant du restaurant A la française">
-                        <div class="legend">
-                            <div class="text">
-                                <h3>À la française</h3>
-                                <p>Cité Rouge</p>
-                            </div>
-                            <div class="hearth">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-    
-                <article class="cards">
-                    <a href="delicedessens.html">
-                            <img src="./img/le_delice_des_sens.jpg" alt="photo d'une assiette contenant un filet de posson blanc accompagné de ciboulette provenant du restaurant Le délice des sens">
-                        <div class="legend">
-                            <div class="text">
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
-                            </div>
-                            <div class="hearth">
-                                <i class="far fa-heart"></i>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-            </div>
-        </section>
+      <!-- SECTION INTRO -->
+
+      <section class="intro">
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>
+          Découvrez des restaurants d'exception, sélectionnés par nos soins.
+        </p>
+        <div class="btn">
+          <a href="#">Explorer nos restaurants</a>
+        </div>
+      </section>
+
+      <!-- SECTION FONCTIONNEMENT -->
+
+      <section class="fonctionnement">
+        <h2>Fonctionnement</h2>
+        <div class="container">
+          <article class="littlecards">
+            <i class="fas fa-mobile-alt"></i>
+            <p>Chosissez un restaurant</p>
+          </article>
+          <article class="littlecards">
+            <i class="fas fa-list-ul"></i>
+            <p>Composez votre menu</p>
+          </article>
+          <article class="littlecards">
+            <i class="fas fa-store"></i>
+            <p>Dégustez au restaurant</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION RESTAURANT -->
+
+      <section class="restau">
+        <h2>Restaurants</h2>
+
+        <div class="restcards">
+          <article class="r-cards">
+            <a href="palettedugout.html">
+              <img
+                src="./img/la_palette_gout.jpg"
+                alt="photo d'une assiette contenant des filets de saumon et de la salade provenant du restaurant la palette du goût"
+              />
+              <div class="legend">
+                <div class="text">
+                  <h3>La palette du goût</h3>
+                  <p>Ménilmontant</p>
+                </div>
+                <div class="hearth">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="r-cards">
+            <a href="lanoteenchantee.html">
+              <img
+                src="./img/la-note-enchantee.jpg"
+                alt="photo d'une assiette contenant des filets de poulet aux olives et ses pommes de terres provenant du restaurant la note enchantée"
+              />
+              <div class="legend">
+                <div class="text">
+                  <h3>La note enchantée</h3>
+                  <p>Charonne</p>
+                </div>
+                <div class="hearth">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="r-cards">
+            <a href="alafrancaise.html">
+              <img
+                src="./img/a_la_française.jpg"
+                alt="photo d'une assiette contenant une tartine de chèvre chauds et ses épinards provenant du restaurant A la française"
+              />
+              <div class="legend">
+                <div class="text">
+                  <h3>À la française</h3>
+                  <p>Cité Rouge</p>
+                </div>
+                <div class="hearth">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="r-cards">
+            <a href="delicedessens.html">
+              <img
+                src="./img/le_delice_des_sens.jpg"
+                alt="photo d'une assiette contenant un filet de posson blanc accompagné de ciboulette provenant du restaurant Le délice des sens"
+              />
+              <div class="legend">
+                <div class="text">
+                  <h3>Le délice des sens</h3>
+                  <p>Folie-Méricourt</p>
+                </div>
+                <div class="hearth">
+                  <i class="far fa-heart"></i>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
     </main>
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
-<footer>
-    <h4>Ohmyfood</h4>
-    <ul>
-        <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-        <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+    <footer>
+      <h4>Ohmyfood</h4>
+      <ul>
+        <li>
+          <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+        </li>
         <li><a href="#">Mentions légales</a></li>
         <li><a href="mailto:">Contact</a></li>
-    </ul>
-</footer>
-
-
-</body>
+      </ul>
+    </footer>
+  </body>
 </html>

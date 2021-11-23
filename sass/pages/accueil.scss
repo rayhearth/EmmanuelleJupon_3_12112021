@@ -45,6 +45,7 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: white;
     .container {
       justify-content: center;
       width: 450px;
@@ -103,7 +104,7 @@ main {
 
   /* SECTION RESTAURANT */
 
-  .restaurant {
+  .restau {
     padding: 50px 20px;
     background-color: $bg-primary;
     .restcards {
@@ -111,13 +112,14 @@ main {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      article.cards {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          position: relative;
-          width: 100%;
-          transition: 0.3s ease-in-out;
+      margin-top: 30px;
+      .r-cards {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        transition: 0.3s ease-in-out;
         &:hover {
           transform: scale(1.05);
         }
@@ -133,7 +135,7 @@ main {
           right: 20px;
         }
         a {
-            margin: .5rem;
+          margin: 0.5rem;
           img {
             width: 100%;
             object-fit: cover;
@@ -148,20 +150,20 @@ main {
             background-color: white;
             border-radius: $radius-txt;
             @include art-shadow;
-            .text{
-                color: black;
-                line-height: 1.5rem;
+            .text {
+              color: black;
+              line-height: 1.5rem;
             }
-            .hearth{
-                font-size: 1.5rem;
-                color: black;
-                transform-origin: 50% -100%;
-                // transform: scaleY(0);
-                transition: transform .4s;
-                &:hover{
-                    color: $colour-primary;
-                    @include bg-gradiant;
-                }
+            .hearth {
+              font-size: 1.5rem;
+              color: black;
+              transform-origin: 50% -100%;
+              // transform: scaleY(0);
+              transition: transform 0.4s;
+              &:hover {
+                color: $colour-primary;
+                @include bg-gradiant;
+              }
             }
           }
         }
