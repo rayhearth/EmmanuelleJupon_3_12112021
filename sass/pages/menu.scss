@@ -31,7 +31,7 @@ main{
 /* MENU */
 
 .menu{
-    padding: 30px 0;
+    padding-top: 30px;
     .food{
         h2{
             font-weight: 300;
@@ -51,10 +51,16 @@ main{
             display: flex;
             background-color: white;
             margin: 20px 0;
-            padding: 10px;
             border-radius: $radius;
             @include art-shadow;
+            transition: all .4s;
+            &:hover + .check{
+                transform: translate(0);
+            
+            }
+            
             .detail{
+                padding: 10px;
                 display: flex;
                 flex-direction: column;
                 width: 100%;
@@ -78,14 +84,11 @@ main{
                 max-width: 60px;
                 width: 100%;
                 cursor: pointer;
-                transform: translate(60px);
+                transform: translate(80px);
                 overflow: hidden;
                 visibility: hidden;
                 z-index: 10;
                 transition: all .4s ease-in-out;
-                &:hover{
-                    transform: translate(0);
-                }
                 }
         }
 

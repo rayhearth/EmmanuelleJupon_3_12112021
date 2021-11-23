@@ -244,7 +244,7 @@ main .restaurant .title i {
   font-size: 26px;
 }
 main .restaurant .menu {
-  padding: 30px 0;
+  padding-top: 30px;
 }
 main .restaurant .menu .food h2 {
   font-weight: 300;
@@ -263,11 +263,15 @@ main .restaurant .menu .food article {
   display: flex;
   background-color: white;
   margin: 20px 0;
-  padding: 10px;
   border-radius: 25px;
   box-shadow: 0px 2px 4px 0px #dddddd;
+  transition: all 0.4s;
+}
+main .restaurant .menu .food article:hover + .check {
+  transform: translate(0);
 }
 main .restaurant .menu .food article .detail {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -291,14 +295,11 @@ main .restaurant .menu .food article .check {
   max-width: 60px;
   width: 100%;
   cursor: pointer;
-  transform: translate(60px);
+  transform: translate(80px);
   overflow: hidden;
   visibility: hidden;
   z-index: 10;
   transition: all 0.4s ease-in-out;
-}
-main .restaurant .menu .food article .check:hover {
-  transform: translate(0);
 }
 
 header {
