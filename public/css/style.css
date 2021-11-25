@@ -261,7 +261,8 @@ main .restaurant .title i {
 }
 main .restaurant .menu .food {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 30px 0;
 }
 main .restaurant .menu .food h2 {
@@ -280,12 +281,18 @@ main .restaurant .menu .food h2::after {
 }
 main .restaurant .menu .food article {
   display: flex;
+  flex-wrap: wrap;
   background-color: white;
   margin: 10px 0;
   border-radius: 20px;
   box-shadow: 0px 2px 4px 0px #dddddd;
   transition: all 0.4s;
   position: relative;
+}
+@media (min-width: 1024px) {
+  main .restaurant .menu .food article {
+    width: 47%;
+  }
 }
 main .restaurant .menu .food article:hover .check {
   transform: translate(0);

@@ -34,7 +34,8 @@ main {
     .menu {
       .food {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
         margin: 30px 0;
         h2 {
           font-weight: 300;
@@ -53,12 +54,16 @@ main {
 
         article {
           display: flex;
+          flex-wrap: wrap;
           background-color: white;
           margin: 10px 0;
           border-radius: 20px;
           @include art-shadow;
           transition: all 0.4s;
           position: relative;
+          @media  (min-width:1024px) {
+            width: 47%;
+          }
           &:hover .check{
             transform: translate(0);
             width: 100%;
