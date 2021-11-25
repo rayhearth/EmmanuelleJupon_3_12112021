@@ -16,24 +16,30 @@ main {
     position: relative;
     top: -50px;
     padding: 30px 15px;
+    @media (min-width: 768px){
+      padding: 50px;
+    }
     /* TITLE */
     .title {
       display: flex;
       justify-content: space-between;
       align-items: center;
       i {
-        font-size: 26px;
+        font-size: 1.6rem;
       }
     }
 
     /* MENU */
 
     .menu {
-      padding-top: 30px;
       .food {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
         h2 {
           font-weight: 300;
           position: relative;
+          margin-bottom: 20px;
           &::after {
             position: absolute;
             content: "";
@@ -48,7 +54,7 @@ main {
         article {
           display: flex;
           background-color: white;
-          margin: 20px 0;
+          margin: 10px 0;
           border-radius: 20px;
           @include art-shadow;
           transition: all 0.4s;
@@ -80,7 +86,7 @@ main {
             align-items: center;
             background: $colour-tertiary;
             color: white;
-            font-size: 22px;
+            font-size: 1.3rem;
             border-radius: 0 15px 15px 0;
             max-width: 60px;
             cursor: pointer;

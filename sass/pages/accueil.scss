@@ -2,12 +2,13 @@ main {
   /* SECTION SEARCH */
   .search {
     @include bg-search;
+    @include top-shadow;
     display: flex;
     justify-content: center;
     align-items: baseline;
     padding: 40px 0;
     color: $dark-grey;
-    font-size: 18px;
+    font-size: 1.12rem;
     input {
       border: none;
       background: none;
@@ -63,11 +64,11 @@ main {
         cursor: pointer;
         position: relative;
         i {
-          font-size: 24px;
+          font-size: 1.5rem;
           color: $dark-grey;
         }
         p {
-          font-size: 18px;
+          font-size: 1.12rem;
         }
         &:hover {
           background: lighten($colour-primary, 30%);
@@ -136,11 +137,17 @@ main {
         }
         a {
           margin: 0.5rem;
+          @media (min-width: 768px) {
+            margin: 1.5rem;
+          }
           img {
             width: 100%;
             object-fit: cover;
             border-radius: $radius-img;
             height: 175px;
+            @media (min-width:768px) {
+              height:300px;
+            }
           }
           .legend {
             display: flex;

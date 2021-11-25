@@ -9,3 +9,7 @@
 @mixin art-shadow($colour:$bg-primary, $size: $shadow-size){
     box-shadow: $size darken($colour, 10%);
 }
+
+@mixin top-shadow($colour: $bg-primary, $size: $top-shadow-size){
+    box-shadow: $size darken($colour, 10%);
+}
