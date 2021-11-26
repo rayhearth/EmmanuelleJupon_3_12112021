@@ -1,37 +1,51 @@
+.bg {
+  img {
+    height: 265px;
+    object-fit: cover;
+    width: 100%;
+    z-index: -1;
+    @media (min-width:992px) {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+  }
+}
+
 main {
   /* BG IMAGE */
   background: $bg-primary;
-  .bg {
-    img {
-      height: 265px;
-      object-fit: cover;
-      width: 100%;
-      z-index: -1;
-    }
+  position: relative;
+  @media (min-width:992px) {
+    max-width: 1400px;
+    margin: 0 auto;
   }
-
+  
   .restaurant {
     background: $bg-primary;
-    border-radius: 50px 50px 0;
-    position: relative;
-    top: -50px;
-    padding: 30px 15px;
-    @media (min-width: 768px){
-      padding: 50px;
-    }
+    // @media (min-width: 768px){
+    //   padding: 20px;
+    // }
     /* TITLE */
     .title {
+      border-radius: 50px 50px 0;
+      top: -35px;
+      left: 0;
+      background: $bg-primary;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
+      position: absolute;
+      padding: 20px;
       i {
         font-size: 1.6rem;
       }
     }
-
+    
     /* MENU */
-
+    
     .menu {
+      padding: 30px 15px;
       .food {
         display: flex;
         flex-wrap: wrap;
@@ -58,11 +72,12 @@ main {
           background-color: white;
           margin: 10px 0;
           border-radius: 20px;
+          width: 100%;
           @include art-shadow;
           transition: all 0.4s;
           position: relative;
-          @media  (min-width:1024px) {
-            width: 47%;
+          @media  (min-width:992px) {
+            width: 48%;
           }
           &:hover .check{
             transform: translate(0);
