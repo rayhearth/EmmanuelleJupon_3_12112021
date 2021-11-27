@@ -2,6 +2,10 @@
     background: linear-gradient($colour-second, $colour-primary);
 }
 
+@mixin gradiant-shadow ($colour:$colour-second, $size:$shadow-size){
+
+} 
+
 @mixin bg-search($colour:$bg-primary){
     background: darken($colour, 5%);
 }
