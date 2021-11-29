@@ -81,7 +81,7 @@ h4 {
   background: linear-gradient(#ff93e1, #a16be0);
   opacity: 0;
   z-index: -1;
-  transition: opacity 250ms;
+  transition: opacity 0.25s;
   border-radius: 25px;
 }
 
@@ -273,34 +273,44 @@ main .restau .restcards .r-cards .legend .text {
 main .restau .restcards .r-cards .legend .hearth {
   font-size: 1.5rem;
   color: black;
-  transition: transform 0.4s;
-  animation: full-hearth-rev 0.75s ease forwards;
+  transition: all 0.3s;
+  z-index: 1;
+  position: relative;
+}
+main .restau .restcards .r-cards .legend .hearth::after {
+  content: "\f004";
+  position: absolute;
+  background-color: #9356dc;
+  background-image: linear-gradient(45deg, #FF79DA, #9356dc);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-position: bottom;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 1rem;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.25s;
 }
 main .restau .restcards .r-cards .legend .hearth:hover {
   background-color: #9356dc;
   background-image: linear-gradient(45deg, #FF79DA, #9356dc);
   background-size: 100%;
+  background-repeat: repeat;
+  background-position: bottom;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  animation: full-hearth 0.5s ease-in forwards;
 }
-@keyframes full-hearth {
-  0% {
-    background-size: 0%;
-  }
-  100% {
-    background-size: 100%;
-  }
-}
-@keyframes full-heart-rev {
-  0% {
-    background-size: 100%;
-  }
-  100% {
-    background-size: 0%;
-  }
+main .restau .restcards .r-cards .legend .hearth:hover::after {
+  opacity: 1;
 }
 
 .bg img {
