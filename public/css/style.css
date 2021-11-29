@@ -21,10 +21,21 @@ h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: normal;
 }
+@media (min-width: 992px) {
+  h1 {
+    max-width: 1400px;
+  }
+}
 
 h2 {
   font-size: 1.5rem;
   width: 100%;
+}
+@media (min-width: 992px) {
+  h2 {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 
 h3 {
@@ -45,11 +56,16 @@ h4 {
   align-items: center;
 }
 .btn a {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356dc);
   color: white;
   padding: 15px 40px;
   border-radius: 25px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.btn a:hover {
+  box-shadow: 5px 5px 10px rgba(147, 86, 220, 0.5);
+  background: linear-gradient(#ff93e1, #a16be0);
 }
 
 main {
@@ -109,6 +125,12 @@ main .fonctionnement .container {
   gap: 10%;
   padding-top: 10px;
 }
+@media (min-width: 992px) {
+  main .fonctionnement .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
 main .fonctionnement .container article {
   display: flex;
   flex-wrap: wrap;
@@ -135,7 +157,7 @@ main .fonctionnement .container article:hover {
   background: #e4d5f6;
 }
 main .fonctionnement .container article:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 main .fonctionnement .container article::before {
   content: "1";
@@ -147,7 +169,7 @@ main .fonctionnement .container article::before {
   bottom: 32%;
   left: -4%;
   padding: 5px 10px;
-  background: #9356DC;
+  background: #9356dc;
   border-radius: 25px;
 }
 main .fonctionnement .container article:nth-of-type(2)::before {
@@ -167,6 +189,13 @@ main .restau .restcards {
   flex-wrap: wrap;
   margin-top: 30px;
 }
+@media (min-width: 992px) {
+  main .restau .restcards {
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
 main .restau .restcards .r-cards {
   display: flex;
   justify-content: center;
@@ -178,7 +207,7 @@ main .restau .restcards .r-cards {
 }
 @media (min-width: 992px) {
   main .restau .restcards .r-cards {
-    width: 50%;
+    width: 48%;
   }
 }
 main .restau .restcards .r-cards:hover {
@@ -231,8 +260,8 @@ main .restau .restcards .r-cards .legend .hearth {
   transition: transform 0.4s;
 }
 main .restau .restcards .r-cards .legend .hearth:hover {
-  color: #9356DC;
-  background: linear-gradient(#FF79DA, #9356DC);
+  color: #9356dc;
+  background: linear-gradient(#FF79DA, #9356dc);
 }
 
 .bg img {
@@ -241,28 +270,22 @@ main .restau .restcards .r-cards .legend .hearth:hover {
   width: 100%;
   z-index: -1;
 }
-@media (min-width: 992px) {
-  .bg img {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-}
 
 main {
   /* BG IMAGE */
   background: #f6f6f6;
   position: relative;
 }
-@media (min-width: 992px) {
-  main {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-}
 main .restaurant {
   background: #f6f6f6;
   /* TITLE */
   /* MENU */
+}
+@media (min-width: 992px) {
+  main .restaurant {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 main .restaurant .title {
   border-radius: 50px 50px 0;
@@ -275,6 +298,11 @@ main .restaurant .title {
   width: 100%;
   position: absolute;
   padding: 20px;
+}
+@media (min-width: 992px) {
+  main .restaurant .title {
+    position: inherit;
+  }
 }
 main .restaurant .title i {
   font-size: 1.6rem;

@@ -8,5 +8,10 @@
         padding: 15px 40px;
         border-radius: $radius;
         cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            box-shadow: $shadow-btn-hover;
+            @include btn-hover;
+        }
     }
 }

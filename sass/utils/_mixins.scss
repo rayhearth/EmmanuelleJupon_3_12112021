@@ -2,6 +2,10 @@
     background: linear-gradient($colour-second, $colour-primary);
 }
 
+@mixin btn-hover {
+    background: linear-gradient(lighten($colour-second,5%), lighten($colour-primary, 5%));  
+}
+
 @mixin gradiant-shadow ($colour:$colour-second, $size:$shadow-size){
 
 } 

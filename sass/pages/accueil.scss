@@ -48,6 +48,10 @@ main {
     flex-wrap: wrap;
     background-color: white;
     .container {
+      @media (min-width:992px) {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -119,14 +123,19 @@ main {
       align-items: center;
       flex-wrap: wrap;
       margin-top: 30px;
+      @media (min-width: 992px) {
+        justify-content: space-between;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
       .r-cards {
         display: flex;
         justify-content: center;
         flex-direction: column;
         position: relative;
         width: 100%;
-        @media (min-width:992px) {
-          width: 50%;
+        @media (min-width: 992px) {
+          width: 48%;
         }
         transition: 0.3s ease-in-out;
         &:hover {

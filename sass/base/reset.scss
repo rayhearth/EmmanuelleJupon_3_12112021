@@ -21,11 +21,18 @@ img {
 h1{
     font-family: "Shrikhand", sans-serif;
     font-weight: normal;
+    @media (min-width: 992px) {
+      max-width: 1400px;   
+    }
 }
 
 h2{
   font-size: 1.5rem;
   width: 100%;
+  @media (min-width: 992px) {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 
 h3{
