@@ -61,11 +61,28 @@ h4 {
   padding: 15px 40px;
   border-radius: 25px;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
   transition: all 0.3s;
 }
 .btn a:hover {
   box-shadow: 5px 5px 10px rgba(147, 86, 220, 0.5);
+}
+.btn a:hover::after {
+  opacity: 1;
+}
+.btn a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: linear-gradient(#ff93e1, #a16be0);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+  border-radius: 25px;
 }
 
 main {
@@ -256,12 +273,34 @@ main .restau .restcards .r-cards .legend .text {
 main .restau .restcards .r-cards .legend .hearth {
   font-size: 1.5rem;
   color: black;
-  transform-origin: 50% -100%;
   transition: transform 0.4s;
+  animation: full-hearth-rev 0.75s ease forwards;
 }
 main .restau .restcards .r-cards .legend .hearth:hover {
-  color: #9356dc;
-  background: linear-gradient(#FF79DA, #9356dc);
+  background-color: #9356dc;
+  background-image: linear-gradient(45deg, #FF79DA, #9356dc);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation: full-hearth 0.5s ease-in forwards;
+}
+@keyframes full-hearth {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+@keyframes full-heart-rev {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 0%;
+  }
 }
 
 .bg img {
@@ -349,6 +388,26 @@ main .restaurant .menu .food article {
 main .restaurant .menu .food article:hover .check {
   transform: translate(0);
   width: 100%;
+  animation: slide-in 0.4s linear;
+}
+main .restaurant .menu .food article:hover .check span {
+  transform: 1turn;
+}
+@keyframes slide-in {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes slide-out {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
 }
 main .restaurant .menu .food article .detail {
   padding: 10px;

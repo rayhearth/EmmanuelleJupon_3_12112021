@@ -182,14 +182,32 @@ main {
             .hearth {
               font-size: 1.5rem;
               color: black;
-              transform-origin: 50% -100%;
-              // transform: scaleY(0);
+              // transform-origin: 50% -100%;
               transition: transform 0.4s;
+              animation: full-hearth-rev 0.75s ease forwards;
               &:hover {
-                color: $colour-primary;
-                @include bg-gradiant;
+                @include gradiant-hearth;
+                animation: full-hearth 0.5s ease-in forwards;
               }
             }
+
+            @keyframes full-hearth{
+              0%{
+                  background-size: 0%;
+              }
+              100%{
+                  background-size: 100%;
+              }
+          }
+          
+          @keyframes full-heart-rev{
+              0%{
+                  background-size: 100%;
+              }
+              100%{
+                  background-size: 0%;
+              }
+          }
           }
       }
     }

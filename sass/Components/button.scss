@@ -8,10 +8,28 @@
         padding: 15px 40px;
         border-radius: $radius;
         cursor: pointer;
+        position: relative;
+        z-index: 1;
         transition: all .3s;
         &:hover{
             box-shadow: $shadow-btn-hover;
+            &::after {
+                opacity: 1;
+            }
+            // @include btn-hover;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
             @include btn-hover;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
+            border-radius: $radius;
         }
     }
 }

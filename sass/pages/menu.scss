@@ -81,6 +81,28 @@ main {
           &:hover .check{
             transform: translate(0);
             width: 100%;
+            animation: slide-in .4s linear;
+            span{
+              transform: 1turn;
+            }
+          }
+
+          @keyframes slide-in {
+            0%{
+              width: 0%;
+            }
+            100%{
+              width: 100%;
+            }
+          }
+
+          @keyframes slide-out{
+            0%{
+              width: 100%;
+            }
+            100%{
+              width: 0%;
+            }
           }
 
           .detail {
