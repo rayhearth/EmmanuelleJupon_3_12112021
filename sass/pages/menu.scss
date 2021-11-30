@@ -67,44 +67,23 @@ main {
 
         article {
           display: flex;
-          flex-wrap: wrap;
+          width: 100%;
           background-color: white;
           margin: 10px 0;
           border-radius: 20px;
-          width: 100%;
           @include art-shadow;
-          transition: all 0.4s;
-          position: relative;
           @media  (min-width:992px) {
             width: 48%;
           }
           &:hover .check{
-            transform: translate(0);
-            width: 100%;
             animation: slide-in .4s linear;
             span{
-              transform: 1turn;
-            }
+              transition: transform .4s;
+              i{
+                transform: rotate(1turn);
+              }
+            } 
           }
-
-          @keyframes slide-in {
-            0%{
-              width: 0%;
-            }
-            100%{
-              width: 100%;
-            }
-          }
-
-          @keyframes slide-out{
-            0%{
-              width: 100%;
-            }
-            100%{
-              width: 0%;
-            }
-          }
-
           .detail {
             padding: 10px;
             display: flex;
@@ -117,11 +96,15 @@ main {
               align-items: center;
               width: 100%;
               padding-top: 5px;
+              :first-child{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
             }
           }
           .check {
-            position: absolute;
-            overflow: hidden;
+            right: 80px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -129,16 +112,22 @@ main {
             color: white;
             font-size: 1.3rem;
             border-radius: 0 15px 15px 0;
-            max-width: 60px;
+            width: 60px;
+            height: 100%;
             cursor: pointer;
-            transform: translate(80px);
             overflow: hidden;
-            visibility: hidden;
             z-index: 10;
-            transition: all 0.4s ease-in-out;
+            animation: slide-out .4s forwards;
+            span{ 
+              // transition: transform .4s 1s;
+              i{
+                transform: rotate(0deg);
+              }
+            }
           }
         }
       }
     }
   }
 }
+
