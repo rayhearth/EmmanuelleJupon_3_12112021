@@ -1,0 +1,17 @@
+.loader{
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    width: 100vh;
+    &::after{
+        background-color: darken($colour-primary, 100%);
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
