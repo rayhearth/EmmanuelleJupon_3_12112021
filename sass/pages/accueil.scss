@@ -183,9 +183,12 @@ main {
               font-size: 1.5rem;
               color: black;
               transition: all .3s;
-              z-index: 1;
+              z-index: 2;
               position: relative;
-              // animation: full-hearth-rev 0.75s ease forwards;
+              transition: all .4s;
+              &:hover{
+                @include gradiant-hearth;
+              }
               &::after{
                 content: '\f004';
                 position: absolute;
@@ -194,39 +197,11 @@ main {
                 left: 0;
                 bottom: 0;
                 left: 0;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 opacity: 0;
-                z-index: -1;
-                transition: opacity .25s;
-
-
-              }
-              &:hover {
-                @include gradiant-hearth;
-                &::after{
-                  opacity: 1;
-                }
-                // animation: full-hearth 0.5s ease-in forwards;
+                z-index: 1;
               }
             }
-
-          //   @keyframes full-hearth{
-          //     from {
-          //         background-size: 0%;
-          //     }
-          //     to {
-          //         background-size: 100%;
-          //     }
-          // }
-          
-          // @keyframes full-heart-rev{
-          //     from {
-          //         background-size: 100%;
-          //     }
-          //     to {
-          //         background-size: 0%;
-          //     }
-          // }
           }
       }
     }

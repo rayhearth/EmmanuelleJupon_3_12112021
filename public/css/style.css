@@ -50,6 +50,37 @@ h4 {
   font-size: 1.25rem;
 }
 
+/***** ANIMATIONS *****/
+/*anim-check*/
+@keyframes slide-in {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 60px;
+    opacity: 1;
+  }
+}
+@keyframes slide-out {
+  0% {
+    width: 60px;
+  }
+  100% {
+    width: 0%;
+  }
+}
+/*fadeIn*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3D(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 .btn {
   display: flex;
   justify-content: center;
@@ -83,6 +114,17 @@ h4 {
   z-index: -1;
   transition: opacity 0.25s;
   border-radius: 25px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
 }
 
 main {
@@ -274,8 +316,20 @@ main .restau .restcards .r-cards .legend .hearth {
   font-size: 1.5rem;
   color: black;
   transition: all 0.3s;
-  z-index: 1;
+  z-index: 2;
   position: relative;
+  transition: all 0.4s;
+}
+main .restau .restcards .r-cards .legend .hearth:hover {
+  background-color: #9356dc;
+  background-image: linear-gradient(45deg, #FF79DA, #9356dc);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-position: bottom;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 main .restau .restcards .r-cards .legend .hearth::after {
   content: "\f004";
@@ -293,24 +347,9 @@ main .restau .restcards .r-cards .legend .hearth::after {
   left: 0;
   bottom: 0;
   left: 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
   opacity: 0;
-  z-index: -1;
-  transition: opacity 0.25s;
-}
-main .restau .restcards .r-cards .legend .hearth:hover {
-  background-color: #9356dc;
-  background-image: linear-gradient(45deg, #FF79DA, #9356dc);
-  background-size: 100%;
-  background-repeat: repeat;
-  background-position: bottom;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-main .restau .restcards .r-cards .legend .hearth:hover::after {
-  opacity: 1;
+  z-index: 1;
 }
 
 .bg img {
@@ -381,14 +420,26 @@ main .restaurant .menu .food h2::after {
 }
 main .restaurant .menu .food article {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
   background-color: white;
   margin: 10px 0;
   border-radius: 20px;
-  width: 100%;
   box-shadow: 0px 2px 4px 0px #dddddd;
-  transition: all 0.4s;
-  position: relative;
+  animation: fadeIn 1s both 0.8s;
+  /*animation delay*/
+  /*hover*/
+}
+main .restaurant .menu .food article:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+main .restaurant .menu .food article:nth-of-type(2) {
+  animation-delay: 1s;
+}
+main .restaurant .menu .food article:nth-of-type(3) {
+  animation-delay: 1.5s;
+}
+main .restaurant .menu .food article:nth-of-type(4) {
+  animation-delay: 2s;
 }
 @media (min-width: 992px) {
   main .restaurant .menu .food article {
@@ -396,28 +447,10 @@ main .restaurant .menu .food article {
   }
 }
 main .restaurant .menu .food article:hover .check {
-  transform: translate(0);
-  width: 100%;
   animation: slide-in 0.4s linear;
 }
 main .restaurant .menu .food article:hover .check span {
-  transform: 1turn;
-}
-@keyframes slide-in {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@keyframes slide-out {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 0%;
-  }
+  transform: rotate(1turn);
 }
 main .restaurant .menu .food article .detail {
   padding: 10px;
@@ -433,9 +466,13 @@ main .restaurant .menu .food article .detail .txt {
   width: 100%;
   padding-top: 5px;
 }
-main .restaurant .menu .food article .check {
-  position: absolute;
+main .restaurant .menu .food article .detail .txt :first-child {
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .restaurant .menu .food article .check {
+  right: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -443,12 +480,15 @@ main .restaurant .menu .food article .check {
   color: white;
   font-size: 1.3rem;
   border-radius: 0 15px 15px 0;
-  max-width: 60px;
+  width: 60px;
+  height: 100%;
   cursor: pointer;
-  transform: translate(80px);
   overflow: hidden;
-  visibility: hidden;
   z-index: 10;
+  animation: slide-out 0.4s forwards;
+}
+main .restaurant .menu .food article .check span {
+  transform: rotate(0);
   transition: all 0.4s ease-in-out;
 }
 

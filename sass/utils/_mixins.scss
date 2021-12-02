@@ -1,9 +1,9 @@
 @mixin bg-gradiant {
-    background: linear-gradient($colour-second, $colour-primary);
+  background: linear-gradient($colour-second, $colour-primary);
 }
 
 @mixin btn-hover {
-    background: linear-gradient(lighten($colour-second,5%), lighten($colour-primary, 5%));  
+  background: linear-gradient(lighten($colour-second,5%), lighten($colour-primary, 5%));  
 }
 
 @mixin gradiant-shadow ($colour:$colour-second, $size:$shadow-size){
@@ -11,27 +11,27 @@
 } 
 
 @mixin bg-search($colour:$bg-primary){
-    background: darken($colour, 5%);
+  background: darken($colour, 5%);
 }
 
 @mixin art-shadow($colour:$bg-primary, $size: $shadow-size){
-    box-shadow: $size darken($colour, 10%);
+  box-shadow: $size darken($colour, 10%);
 }
 
 @mixin top-shadow($colour: $bg-primary, $size: $top-shadow-size){
-    box-shadow: $size darken($colour, 10%);
+  box-shadow: $size darken($colour, 10%);
 }
 
 @mixin gradiant-hearth{
-    background-color: $colour-primary;
-    background-image: linear-gradient(45deg, $colour-second, $colour-primary);
-    background-size: 100%;
-    background-repeat: repeat;
-    background-position: bottom;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+  background-color: $colour-primary;
+  background-image: linear-gradient(45deg, $colour-second, $colour-primary);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-position: bottom;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 
 }
 
@@ -42,22 +42,36 @@
 /*anim-check*/
 
 @keyframes slide-in {
-    0%{
-      width: 0%;
-      opacity: 0;
-    }
-    100%{
-      width: 60px;
-      opacity: 1;
-    }
+  0%{
+    width: 0%;
+    opacity: 0;
   }
+  100%{
+    width: 60px;
+    opacity: 1;
+  }
+}
 
-  @keyframes slide-out{
-    0%{
-      width: 60px;
-    }
-    100%{
-      width: 0%;
-    }
+@keyframes slide-out{
+  0%{
+    width: 60px;
   }
+  100%{
+    width: 0%;
+  }
+}
+
+/*fadeIn*/
+
+
+@keyframes fadeIn{
+  from {
+    opacity:0;
+    transform: translate3D(0,100%,0);
+  }
+  to{
+    opacity:1;
+    transform: none;
+  }
+}
 
