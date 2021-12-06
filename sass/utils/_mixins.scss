@@ -3,120 +3,123 @@
 }
 
 @mixin btn-hover {
-  background: linear-gradient(lighten($colour-second,5%), lighten($colour-primary, 5%));  
+  background: linear-gradient(
+    lighten($colour-second, 5%),
+    lighten($colour-primary, 5%)
+  );
 }
 
-@mixin gradiant-shadow ($colour:$colour-second, $size:$shadow-size){
+@mixin gradiant-shadow($colour: $colour-second, $size: $shadow-size) {
+}
 
-} 
-
-@mixin bg-search($colour:$bg-primary){
+@mixin bg-search($colour: $bg-primary) {
   background: darken($colour, 5%);
 }
 
-@mixin art-shadow($colour:$bg-primary, $size: $shadow-size){
+@mixin art-shadow($colour: $bg-primary, $size: $shadow-size) {
   box-shadow: $size darken($colour, 10%);
 }
 
-@mixin top-shadow($colour: $bg-primary, $size: $top-shadow-size){
+@mixin top-shadow($colour: $bg-primary, $size: $top-shadow-size) {
   box-shadow: $size darken($colour, 10%);
 }
-
 
 /*HEARTH*/
 
-  @mixin gradiant-hearth{
-    .fas{
-      font-family: "Font Awesome 5 Free";
-      font-size: 1.7rem;
-      font-weight: 100;
-      color: black;
-      animation: full-hearth 1.2s;
-    }
-    input{
-      visibility: hidden;
-    }
-    input[type="checkbox"]:checked ~ i{
-      font-weight: 900;
-      background: linear-gradient(
-        45deg,
-        $colour-second,
-        $colour-primary
-        );
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-text-fill-color: transparent;
-    }
-    &:hover{
-      cursor: pointer;
-      i{
-      font-weight: 900;
-      background: linear-gradient(
-      45deg,
-      $colour-second,
-      $colour-primary
-      );
+@mixin gradiant-hearth {
+  .fas {
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.7rem;
+    font-weight: 100;
+    color: black;
+  }
+  input {
+    visibility: hidden;
+  }
+  input[type="checkbox"]:checked ~ i {
+    font-weight: 700;
+    background: linear-gradient(45deg, $colour-second, $colour-primary);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  &:hover {
+    cursor: pointer;
+    i {
+      animation: full-hearth 1.2s both;
+      font-weight: 700;
+      background: linear-gradient(45deg, $colour-second, $colour-primary);
       -webkit-background-clip: text;
       -moz-background-clip: text;
-      -webkit-text-fill-color: transparent; 
+      -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent;
-      }
     }
   }
-
-
+}
 
 /***** ANIMATIONS *****/
 
 /*anim-hearth*/
-@keyframes full-heart {
-  0%{
-    
+@keyframes full-hearth {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
   }
-  
+
+  17% {
+    transform: scaleY(0.18);
+  }
+  24% {
+    transform: scaleY(0.4);
+  }
+  46% {
+    transform: scaleY(0.81);
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
 }
-
-
 
 /*anim-check*/
 
 @keyframes slide-in {
-  0%{
+  0% {
     width: 0%;
     opacity: 0;
   }
-  100%{
+  100% {
     width: 60px;
     opacity: 1;
   }
 }
 
-@keyframes slide-out{
-  0%{
+@keyframes slide-out {
+  0% {
     width: 60px;
   }
-  100%{
+  100% {
     width: 0%;
   }
 }
 
-
 /*fadeIn*/
 
-@keyframes fadeIn{
+@keyframes fadeIn {
   from {
-    opacity:0;
-    transform: translate3D(0,100%,0);
+    opacity: 0;
+    transform: translate3D(0, 100%, 0);
   }
-  to{
-    opacity:1;
+  to {
+    opacity: 1;
     transform: none;
   }
 }
 
 /***** LOADER *****/
-.loader{
+.loader {
   display: contents;
   justify-content: center;
   align-items: center;
@@ -124,12 +127,12 @@
   z-index: -1;
   height: 100vh;
   width: 100vh;
-  &::after{
-      background-color: darken($colour-primary, 100%);
-      content: "";
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+  &::after {
+    background-color: darken($colour-primary, 100%);
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }
