@@ -139,7 +139,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: hsla(267, 66%, 60%, 0.50);
+  background-color: rgba(17, 17, 17, 0.7);
   // z-index: -1;
   height: 100vh;
   width: 100%;
@@ -148,17 +148,36 @@
     position: absolute;
     top: 200px;
     font-family: "Shrikhand", cursive;
+    color: white;
     font-size: 40px;
     text-align: center;
-    animation: fadeIn 1.5s ease-in-out 1 both ;
+    animation: fadeIn 1.5s ease-in-out 1 both;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 375px;
+    border: 8px solid lighten($colour-tertiary, 30%);
+    border-top: 8px solid $colour-primary;
+    border-right: 8px solid $colour-second;
+    border-bottom: 8px solid $colour-tertiary;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spin-before 0.8s linear infinite;
   }
   &::after {
-    background-color: darken($colour-primary, 100%);
     content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    top: 400px;
+    border: 8px solid lighten($colour-tertiary, 30%);
+    border-top: 8px solid $colour-primary;
+    border-right: 8px solid $colour-second;
+    border-bottom: 8px solid $colour-tertiary;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin-after 0.8s linear infinite;
   }
 }
 
@@ -176,5 +195,25 @@
     opacity: 0;
     visibility: hidden;
     z-index: -9999;
+  }
+}
+
+@keyframes spin-after{
+0%{
+  transform: rotate(0deg) scale(1);
+}
+100%{
+  transform: rotate(360deg) scale(1.5);
+}
+}
+
+@keyframes spin-before {
+  from{
+    transform: rotate(360deg) scale(1.5);
+    animation-direction: reverse;
+  }
+  to{
+    transform: rotate(0deg) scale(1);
+    animation-direction: reverse;
   }
 }
