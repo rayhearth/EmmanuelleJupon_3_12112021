@@ -37,8 +37,12 @@
     visibility: hidden;
   }
   input[type="checkbox"]:checked ~ i {
-    font-weight: 700;
-    background: linear-gradient(45deg, $colour-second, $colour-primary);
+    font-weight: 900;
+    background: linear-gradient(
+    45deg, 
+    $colour-second 0%, 
+    $colour-primary 100%
+    );
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -48,8 +52,12 @@
     cursor: pointer;
     i {
       animation: full-hearth 1.2s both;
-      font-weight: 700;
-      background: linear-gradient(45deg, $colour-second, $colour-primary);
+      font-weight: 900;
+      background: linear-gradient(
+      45deg, 
+      $colour-second 0%, 
+      $colour-primary 100%
+      );
       -webkit-background-clip: text;
       -moz-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -66,22 +74,25 @@
     transform: scaleY(0);
     opacity: 0;
   }
-
-  17% {
-    transform: scaleY(0.18);
+  15% {
+    transform: scaleY(0.33);
   }
-  24% {
-    transform: scaleY(0.4);
+  25% {
+    transform: scaleY(0.51);
   }
-  46% {
-    transform: scaleY(0.81);
+  43% {
+    transform: scaleY(0.70);
     opacity: 0.5;
+  }
+  68% {
+    transform: scaleY(0.87);
   }
   100% {
     opacity: 1;
     transform: scaleY(1);
   }
 }
+
 
 /*anim-check*/
 

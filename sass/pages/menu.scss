@@ -72,7 +72,7 @@ main {
           margin: 10px 0;
           border-radius: 20px;
           @include art-shadow;
-          animation: fadeIn 1s both .8s;
+          animation: fadeIn 2s both .8s;
 
           /*animation delay*/
 
@@ -97,7 +97,7 @@ main {
           /*hover*/
 
           &:hover .check{
-            animation: slide-in .4s linear;
+            animation: slide-in .8s linear;
             span{
                 transform: rotate(1turn);
             } 
@@ -135,10 +135,10 @@ main {
             cursor: pointer;
             overflow: hidden;
             z-index: 10;
-            animation: slide-out .4s forwards;
+            animation: slide-out .8s forwards;
             span{ 
                 transform: rotate(0);
-                transition: all .4s ease-in-out;
+                transition: all .8s ease-in-out;
               }
           }
         }

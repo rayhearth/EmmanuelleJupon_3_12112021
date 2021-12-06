@@ -58,15 +58,18 @@ h4 {
     transform: scaleY(0);
     opacity: 0;
   }
-  17% {
-    transform: scaleY(0.18);
+  15% {
+    transform: scaleY(0.33);
   }
-  24% {
-    transform: scaleY(0.4);
+  25% {
+    transform: scaleY(0.51);
   }
-  46% {
-    transform: scaleY(0.81);
+  43% {
+    transform: scaleY(0.7);
     opacity: 0.5;
+  }
+  68% {
+    transform: scaleY(0.87);
   }
   100% {
     opacity: 1;
@@ -369,8 +372,8 @@ main .restau .restcards .r-cards .legend .hearth input {
   visibility: hidden;
 }
 main .restau .restcards .r-cards .legend .hearth input[type=checkbox]:checked ~ i {
-  font-weight: 700;
-  background: linear-gradient(45deg, #FF79DA, #9356dc);
+  font-weight: 900;
+  background: linear-gradient(45deg, #FF79DA 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -381,8 +384,8 @@ main .restau .restcards .r-cards .legend .hearth:hover {
 }
 main .restau .restcards .r-cards .legend .hearth:hover i {
   animation: full-hearth 1.2s both;
-  font-weight: 700;
-  background: linear-gradient(45deg, #FF79DA, #9356dc);
+  font-weight: 900;
+  background: linear-gradient(45deg, #FF79DA 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -462,7 +465,7 @@ main .restaurant .menu .food article {
   margin: 10px 0;
   border-radius: 20px;
   box-shadow: 0px 2px 4px 0px #dddddd;
-  animation: fadeIn 1s both 0.8s;
+  animation: fadeIn 2s both 0.8s;
   /*animation delay*/
   /*hover*/
 }
@@ -484,7 +487,7 @@ main .restaurant .menu .food article:nth-of-type(4) {
   }
 }
 main .restaurant .menu .food article:hover .check {
-  animation: slide-in 0.4s linear;
+  animation: slide-in 0.8s linear;
 }
 main .restaurant .menu .food article:hover .check span {
   transform: rotate(1turn);
@@ -522,11 +525,11 @@ main .restaurant .menu .food article .check {
   cursor: pointer;
   overflow: hidden;
   z-index: 10;
-  animation: slide-out 0.4s forwards;
+  animation: slide-out 0.8s forwards;
 }
 main .restaurant .menu .food article .check span {
   transform: rotate(0);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 header {
@@ -548,6 +551,10 @@ header a i {
   font-size: 18px;
   font-weight: bold;
   color: black;
+  transition: all 0.4s;
+}
+header a i:hover {
+  transform: scale(1.2);
 }
 
 footer {
