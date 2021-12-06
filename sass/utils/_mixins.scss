@@ -22,21 +22,61 @@
   box-shadow: $size darken($colour, 10%);
 }
 
-@mixin gradiant-hearth{
-  
-  background-color: linear-gradient(45deg, $colour-second, $colour-primary);
-  background-size: 100%;
-  background-repeat: repeat;
-  background-position: bottom;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
 
-}
+/*HEARTH*/
+
+  @mixin gradiant-hearth{
+    .fas{
+      font-family: "Font Awesome 5 Free";
+      font-size: 1.7rem;
+      font-weight: 100;
+      color: black;
+      animation: full-hearth 1.2s;
+    }
+    input{
+      visibility: hidden;
+    }
+    input[type="checkbox"]:checked ~ i{
+      font-weight: 900;
+      background: linear-gradient(
+        45deg,
+        $colour-second,
+        $colour-primary
+        );
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+    }
+    &:hover{
+      cursor: pointer;
+      i{
+      font-weight: 900;
+      background: linear-gradient(
+      45deg,
+      $colour-second,
+      $colour-primary
+      );
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+      -moz-text-fill-color: transparent;
+      }
+    }
+  }
+
 
 
 /***** ANIMATIONS *****/
+
+/*anim-hearth*/
+@keyframes full-heart {
+  0%{
+    
+  }
+  
+}
+
 
 
 /*anim-check*/
@@ -75,3 +115,21 @@
   }
 }
 
+/***** LOADER *****/
+.loader{
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  width: 100vh;
+  &::after{
+      background-color: darken($colour-primary, 100%);
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  }
+}
