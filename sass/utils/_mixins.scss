@@ -151,7 +151,7 @@
     color: white;
     font-size: 40px;
     text-align: center;
-    animation: fadeIn 1.5s ease-in-out 1 both;
+    animation: fadeIn 1.5s ease-in-out .8s both;
   }
   &::before {
     content: "";
@@ -164,7 +164,7 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    animation: spin-before 0.8s linear infinite;
+    animation: spin-before 1.5s linear infinite;
   }
   &::after {
     content: "";
@@ -177,7 +177,7 @@
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    animation: spin-after 0.8s linear infinite;
+    animation: spin-after 1.5s linear infinite;
   }
 }
 
