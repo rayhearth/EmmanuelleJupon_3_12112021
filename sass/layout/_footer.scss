@@ -1,47 +1,46 @@
-footer{
-    background-color: $dark-grey;
-    .contain{
-        @media (min-width:992px) {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        padding: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        h4{
-            width: 100%;
-            @media (min-width:992px) {
-                text-align: center;
-            }
-        }
-        ul{
-            margin-top: 20px;
-            list-style-type: none;
-            display:flex;
-            align-items: center;
-            flex-wrap: wrap;
-            width: 100%;
-            li{
-                line-height: 25px;
-                width: 100%;
-                display: flex;
-                @media (min-width:992px) {
-                    justify-content: space-evenly;
-                    width: 25%;
-                }
-                a{
-                    color: white;
-                    transition: all .4s;
-                    i{
-                        width: 20px;
-                        font-size: 12px;
-                    }
-                &:hover{
-                    color: $colour-tertiary;
-                }
-                }
-            }
-        }
+footer {
+  background-color: $dark-grey;
+  .contain {
+    @media (min-width: 992px) {
+      max-width: 1400px;
+      margin: 0 auto;
     }
-
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    h4 {
+      width: 100%;
+      @media (min-width: 992px) {
+        text-align: center;
+      }
+    }
+    ul {
+      margin-top: 20px;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      li {
+        line-height: 25px;
+        width: 100%;
+        display: flex;
+        @media (min-width: 992px) {
+          justify-content: space-evenly;
+          width: 25%;
+        }
+        a {
+          color: white;
+          transition: all 0.4s;
+          i {
+            width: 20px;
+            font-size: 12px;
+          }
+          &:hover {
+            color: $colour-tertiary;
+          }
+        }
+      }
+    }
+  }
 }

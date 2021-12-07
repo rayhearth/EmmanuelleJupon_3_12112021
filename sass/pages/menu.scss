@@ -11,10 +11,10 @@ main {
   /* BG IMAGE */
   background: $bg-primary;
   position: relative;
-  
+
   .restaurant {
     background: $bg-primary;
-    @media (min-width:992px) {
+    @media (min-width: 992px) {
       max-width: 1400px;
       margin: 0 auto;
     }
@@ -33,16 +33,16 @@ main {
       width: 100%;
       position: absolute;
       padding: 20px;
-      @media (min-width:992px){
+      @media (min-width: 992px) {
         position: inherit;
       }
       i {
         font-size: 1.6rem;
       }
     }
-    
+
     /* MENU */
-    
+
     .menu {
       padding: 30px 15px;
       .food {
@@ -72,35 +72,34 @@ main {
           margin: 10px 0;
           border-radius: 20px;
           @include art-shadow;
-          animation: fadeIn 2s both .8s;
+          animation: fadeIn 2s both 0.8s;
 
           /*animation delay*/
 
-          &:nth-of-type(1){
-            animation-delay: .5s;
+          &:nth-of-type(1) {
+            animation-delay: 0.5s;
           }
-          &:nth-of-type(2){
+          &:nth-of-type(2) {
             animation-delay: 1s;
           }
-          &:nth-of-type(3){
+          &:nth-of-type(3) {
             animation-delay: 1.5s;
           }
-          &:nth-of-type(4){
+          &:nth-of-type(4) {
             animation-delay: 2s;
           }
 
-
-          @media  (min-width:992px) {
+          @media (min-width: 992px) {
             width: 48%;
           }
 
           /*hover*/
 
-          &:hover .check{
-            animation: slide-in .8s linear;
-            span{
-                transform: rotate(1turn);
-            } 
+          &:hover .check {
+            animation: slide-in 0.8s linear;
+            span {
+              transform: rotate(1turn);
+            }
           }
           .detail {
             padding: 10px;
@@ -114,7 +113,7 @@ main {
               align-items: center;
               width: 100%;
               padding-top: 5px;
-              :first-child{
+              :first-child {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -135,11 +134,11 @@ main {
             cursor: pointer;
             overflow: hidden;
             z-index: 10;
-            animation: slide-out .8s forwards;
-            span{ 
-                transform: rotate(0);
-                transition: all .8s ease-in-out;
-              }
+            animation: slide-out 0.8s forwards;
+            span {
+              transform: rotate(0);
+              transition: all 0.8s ease-in-out;
+            }
           }
         }
       }

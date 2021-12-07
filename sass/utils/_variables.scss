@@ -1,19 +1,18 @@
-$colour-primary:#9356dc;
-$colour-second:#FF79DA;
-$colour-tertiary:#99E2D0;
+$colour-primary: #9356dc;
+$colour-second: #ff79da;
+$colour-tertiary: #99e2d0;
 
-
-$bg-primary:#f6f6f6;
-$bg-second:#eaeaea;
-$dark-grey:#353535;
+$bg-primary: #f6f6f6;
+$bg-second: #eaeaea;
+$dark-grey: #353535;
 
 $radius: 25px;
-$radius-img:25px 25px 0 0;
-$radius-txt:0 0 25px 25px;
+$radius-img: 25px 25px 0 0;
+$radius-txt: 0 0 25px 25px;
 
-$shadows:#afaeae;
-$shadow-size:0px 2px 4px 0px;
-$top-shadow-size: inset 0 5px 10px; 
-$shadow-btn-hover:5px 5px 10px rgba(147,86,220,0.5);
+$shadows: #afaeae;
+$shadow-size: 0px 2px 4px 0px;
+$top-shadow-size: inset 0 5px 10px;
+$shadow-btn-hover: 5px 5px 10px rgba(147, 86, 220, 0.5);
 
-$gradiant:linear (45deg, $colour-primary, colour-second, $colour-tertiary );
+$gradiant: linear (45deg, $colour-primary, colour-second, $colour-tertiary);

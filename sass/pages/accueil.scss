@@ -47,7 +47,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     background-color: white;
-    h2{
+    h2 {
       @media (min-width: 992px) {
         justify-content: center;
         display: flex;
@@ -60,7 +60,7 @@ main {
       width: 100%;
       gap: 10%;
       padding-top: 10px;
-      @media (min-width:992px) {
+      @media (min-width: 992px) {
         max-width: 1400px;
         margin: 0 auto;
       }
@@ -168,27 +168,27 @@ main {
             object-fit: cover;
             border-radius: $radius-img;
             height: 175px;
-            @media (min-width:768px) {
-              height:300px;
+            @media (min-width: 768px) {
+              height: 300px;
             }
           }
         }
-          .legend {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            background-color: white;
-            border-radius: $radius-txt;
-            @include art-shadow;
-            .text {
-              color: black;
-              line-height: 1.5rem;
-            }
-            .hearth {
-              @include gradiant-hearth;
-            }
+        .legend {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px;
+          background-color: white;
+          border-radius: $radius-txt;
+          @include art-shadow;
+          .text {
+            color: black;
+            line-height: 1.5rem;
           }
+          .hearth {
+            @include gradiant-hearth;
+          }
+        }
       }
     }
   }

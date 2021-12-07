@@ -17,16 +17,15 @@ img {
   display: block;
 }
 
-
-h1{
-    font-family: "Shrikhand", sans-serif;
-    font-weight: normal;
-    @media (min-width: 992px) {
-      max-width: 1400px;   
-    }
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: normal;
+  @media (min-width: 992px) {
+    max-width: 1400px;
+  }
 }
 
-h2{
+h2 {
   font-size: 1.5rem;
   width: 100%;
   @media (min-width: 992px) {
@@ -35,17 +34,14 @@ h2{
   }
 }
 
-h3{
-    text-overflow: ellipsis;
-    display: flex;
+h3 {
+  text-overflow: ellipsis;
+  display: flex;
 }
 
-h4{
+h4 {
   color: white;
   font-family: "Shrikhand";
   font-weight: normal;
   font-size: 1.25rem;
 }
-
-
-

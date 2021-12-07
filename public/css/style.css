@@ -136,8 +136,8 @@ h4 {
   top: 375px;
   border: 8px solid white;
   border-top: 8px solid #9356dc;
-  border-right: 8px solid #FF79DA;
-  border-bottom: 8px solid #99E2D0;
+  border-right: 8px solid #ff79da;
+  border-bottom: 8px solid #99e2d0;
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -149,8 +149,8 @@ h4 {
   top: 400px;
   border: 8px solid white;
   border-top: 8px solid #9356dc;
-  border-right: 8px solid #FF79DA;
-  border-bottom: 8px solid #99E2D0;
+  border-right: 8px solid #ff79da;
+  border-bottom: 8px solid #99e2d0;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -196,7 +196,7 @@ h4 {
   align-items: center;
 }
 .btn a {
-  background: linear-gradient(#FF79DA, #9356dc);
+  background: linear-gradient(#ff79da, #9356dc);
   color: white;
   padding: 15px 40px;
   border-radius: 25px;
@@ -392,7 +392,7 @@ main .restau .restcards .r-cards::before {
   position: absolute;
   padding: 10px 15px;
   color: #278870;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   font-weight: bold;
   z-index: 2;
   top: 5%;
@@ -438,7 +438,7 @@ main .restau .restcards .r-cards .legend .hearth input {
 }
 main .restau .restcards .r-cards .legend .hearth input[type=checkbox]:checked ~ i {
   font-weight: 900;
-  background: linear-gradient(45deg, #FF79DA 0%, #9356dc 100%);
+  background: linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -450,7 +450,7 @@ main .restau .restcards .r-cards .legend .hearth:hover {
 main .restau .restcards .r-cards .legend .hearth:hover i {
   animation: full-hearth 1.2s both;
   font-weight: 900;
-  background: linear-gradient(45deg, #FF79DA 0%, #9356dc 100%);
+  background: linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -521,7 +521,7 @@ main .restaurant .menu .food h2::after {
   left: 0;
   width: 45px;
   height: 3px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 main .restaurant .menu .food article {
   display: flex;
@@ -581,7 +581,7 @@ main .restaurant .menu .food article .check {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #99E2D0;
+  background: #99e2d0;
   color: white;
   font-size: 1.3rem;
   border-radius: 0 15px 15px 0;
@@ -672,7 +672,7 @@ footer .contain ul li a i {
   font-size: 12px;
 }
 footer .contain ul li a:hover {
-  color: #99E2D0;
+  color: #99e2d0;
 }
 
 /*# sourceMappingURL=style.css.map */
