@@ -33,11 +33,12 @@ main{
       width: 100%;
       position: absolute;
       padding: 20px;
+      .hearth {
+        @include gradiant-hearth;
+        margin: 15px;
+      }
       @media (min-width: 992px) {
         position: inherit;
-      }
-      i {
-        font-size: 1.6rem;
       }
     }
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="Page d'acceuil de Ohmyfood!, un prestataire de commande de repas en ligne qui regrouppe les menus des meilleurs restaurants gastronomiques de la région parisienne."
+      content="Page du menu d'un restaurant partenaire de Ohmyfood!, un prestataire de commande de repas en ligne qui regrouppe les menus des meilleurs restaurants gastronomiques de la région parisienne."
     />
     <title>Ohmyfood!</title>
 
@@ -37,7 +37,6 @@
     <link rel="stylesheet" href="public/css/style.css" />
   </head>
 
-  
   <body>
     <!-- HEADER -->
     <header>
@@ -58,22 +57,24 @@
 
     <!-- MAIN -->
     <main>
-
       <div class="restaurant">
-
         <!-- TITLE -->
         <div class="title">
           <h1>Palette du goût</h1>
-          <i class="far fa-heart"></i>
+          <div class="hearth">
+            <label for="hearth5">
+              <input id="hearth5" type="checkbox" />
+              <i class="fas fa-heart"></i>
+            </label>
+          </div>
         </div>
-  
+
         <!-- MENU -->
         <section class="menu">
-            
           <!-- ENTREES -->
           <section class="food">
             <h2>Entrées</h2>
-  
+
             <article class="cards">
               <div class="detail">
                 <h3>Fricassée d'escargot</h3>
@@ -86,7 +87,7 @@
                 <span><i class="fas fa-check-circle"></i></span>
               </div>
             </article>
-  
+
             <article class="cards">
               <div class="detail">
                 <h3>Foie gras de canard mi-cuit</h3>
@@ -99,7 +100,7 @@
                 <span><i class="fas fa-check-circle"></i></span>
               </div>
             </article>
-  
+
             <article class="cards">
               <div class="detail">
                 <h3>Oeuf au plat</h3>
@@ -113,11 +114,11 @@
               </div>
             </article>
           </section>
-  
+
           <!-- PLAT -->
           <section class="food">
             <h2>Plats</h2>
-  
+
             <article class="cards">
               <div class="detail">
                 <h3>Filet de boeuf aux herbes</h3>
@@ -130,7 +131,7 @@
                 <span><i class="fas fa-check-circle"></i></span>
               </div>
             </article>
-  
+
             <article class="cards">
               <div class="detail">
                 <h3>Parmentier de queue de boeuf</h3>
@@ -143,7 +144,7 @@
                 <span><i class="fas fa-check-circle"></i></span>
               </div>
             </article>
-  
+
             <article class="cards">
               <div class="detail">
                 <h3>Filet de turbot</h3>
@@ -157,11 +158,11 @@
               </div>
             </article>
           </section>
-  
+
           <!-- DESSERT -->
           <section class="food">
             <h2>Desserts</h2>
-  
+
             <article class="cards">
               <div class="detail">
                 <h3>Paris-Brest</h3>
@@ -174,7 +175,7 @@
                 <span><i class="fas fa-check-circle"></i></span>
               </div>
             </article>
-  
+
             <article class="cards">
               <div class="detail">
                 <h3>Macaron au chocolat d'exception</h3>
@@ -187,7 +188,7 @@
                 <span><i class="fas fa-check-circle"></i></span>
               </div>
             </article>
-  
+
             <article class="cards">
               <div class="detail">
                 <h3>Mousse au chocolat</h3>
@@ -201,14 +202,14 @@
               </div>
             </article>
           </section>
-  
+
           <!-- BUTTON -->
           <div class="btn">
             <a href="#">Commander</a>
           </div>
         </section>
-      </main>
       </div>
+    </main>
 
     <!-- FOOTER -->
 
@@ -217,10 +218,14 @@
         <h4>Ohmyfood</h4>
         <ul>
           <li>
-            <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+            <a href="#"
+              ><i class="fas fa-utensils"></i>Proposer un restaurant</a
+            >
           </li>
           <li>
-            <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+            <a href="#"
+              ><i class="fas fa-hands-helping"></i>Devenir partenaire</a
+            >
           </li>
           <li><a href="#">Mentions légales</a></li>
           <li><a href="mailto:">Contact</a></li>

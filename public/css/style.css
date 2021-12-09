@@ -462,7 +462,6 @@ main .restau .restcards .r-cards .legend {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
   background-color: white;
   border-radius: 0 0 25px 25px;
   box-shadow: 0px 2px 4px 0px #dddddd;
@@ -470,12 +469,17 @@ main .restau .restcards .r-cards .legend {
 main .restau .restcards .r-cards .legend .text {
   color: black;
   line-height: 1.5rem;
+  margin: 15px;
+}
+main .restau .restcards .r-cards .legend .hearth {
+  margin: 15px;
 }
 main .restau .restcards .r-cards .legend .hearth .fas {
   font-family: "Font Awesome 5 Free";
   font-size: 1.7rem;
   font-weight: 100;
   color: black;
+  transform-origin: 50%, 50%;
 }
 main .restau .restcards .r-cards .legend .hearth input {
   visibility: hidden;
@@ -536,13 +540,43 @@ main .restaurant .title {
   position: absolute;
   padding: 20px;
 }
+main .restaurant .title .hearth {
+  margin: 15px;
+}
+main .restaurant .title .hearth .fas {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.7rem;
+  font-weight: 100;
+  color: black;
+  transform-origin: 50%, 50%;
+}
+main .restaurant .title .hearth input {
+  visibility: hidden;
+}
+main .restaurant .title .hearth input[type=checkbox]:checked ~ i {
+  font-weight: 900;
+  background: linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+main .restaurant .title .hearth:hover {
+  cursor: pointer;
+}
+main .restaurant .title .hearth:hover i {
+  animation: full-hearth 1.2s both;
+  font-weight: 900;
+  background: linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
 @media (min-width: 992px) {
   main .restaurant .title {
     position: inherit;
   }
-}
-main .restaurant .title i {
-  font-size: 1.6rem;
 }
 main .restaurant .menu {
   padding: 30px 15px;

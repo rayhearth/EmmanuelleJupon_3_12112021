@@ -177,16 +177,17 @@ main {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 15px;
           background-color: white;
           border-radius: $radius-txt;
           @include art-shadow;
           .text {
             color: black;
             line-height: 1.5rem;
+            margin: 15px;
           }
           .hearth {
             @include gradiant-hearth;
+            margin: 15px;
           }
         }
       }
