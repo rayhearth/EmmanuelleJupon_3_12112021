@@ -112,13 +112,14 @@ h4 {
   justify-content: center;
   align-items: center;
   position: fixed;
+  z-index: 9999;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(17, 17, 17, 0.7);
   height: 100vh;
   width: 100%;
+  background-color: rgba(17, 17, 17, 0.7);
   animation: loader 4s ease-in 0.8s both;
 }
 .loader .label {
@@ -189,12 +190,10 @@ h4 {
 @keyframes loader {
   0% {
     opacity: 1;
-    z-index: 9999;
   }
   100% {
     visibility: hidden;
     opacity: 0;
-    z-index: -9999;
   }
 }
 @keyframes rotate {
@@ -291,20 +290,24 @@ main .search {
   box-shadow: inset 0 5px 10px #dddddd;
   display: flex;
   justify-content: center;
-  align-items: baseline;
-  padding: 40px 0;
+  align-content: center;
+  padding: 30px 0;
   color: #353535;
-  font-size: 1.12rem;
 }
-main .search input {
+main .search form i {
+  font-weight: 900;
+  font-size: 1rem;
+}
+main .search form input {
   border: none;
-  background: none;
+  outline: none;
+  background-color: transparent;
   font-weight: bold;
-  padding-left: 10px;
-  color: #353535;
+  padding: 15px;
 }
-main .search input::placeholder {
+main .search form input::placeholder {
   font-weight: bold;
+  font-size: 1rem;
 }
 main .intro {
   display: flex;
