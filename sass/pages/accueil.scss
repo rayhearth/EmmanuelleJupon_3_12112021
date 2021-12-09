@@ -151,7 +151,7 @@ main {
         }
         transition: 0.3s ease-in-out;
         &:hover {
-          transform: scale(1.05);
+          transform: scale(1.025);
         }
         &::before {
           content: "Nouveau";

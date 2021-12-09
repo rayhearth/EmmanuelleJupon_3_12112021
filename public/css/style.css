@@ -434,7 +434,7 @@ main .restau .restcards .r-cards {
   }
 }
 main .restau .restcards .r-cards:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 main .restau .restcards .r-cards::before {
   content: "Nouveau";
