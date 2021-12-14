@@ -20,8 +20,12 @@ img {
 h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: normal;
+  font-size: 1.9rem;
   @media (min-width: 992px) {
     max-width: 1400px;
+  }
+  @media (max-width: 375px) {
+    font-size: 1.7rem;
   }
 }
 
