@@ -32,7 +32,6 @@
     font-size: 1.7rem;
     font-weight: 100;
     color: black;
-    transform-origin: 50%, 50%;
   }
   input {
     visibility: hidden;
@@ -50,10 +49,7 @@
     i {
       animation: full-hearth 1.2s both;
       font-weight: 900;
-      background: linear-gradient(
-        45deg,
-        $colour-second 0%,
-        $colour-primary 100%
+      background: linear-gradient(45deg, $colour-second 0%, $colour-primary 100%
       );
       -webkit-background-clip: text;
       -moz-background-clip: text;
