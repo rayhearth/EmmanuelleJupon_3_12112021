@@ -18,9 +18,7 @@ main{
       max-width: 1400px;
       margin: 0 auto;
     }
-    // @media (min-width: 768px){
-    //   padding: 20px;
-    // }
+    
     /* TITLE */
     .title {
       border-radius: 50px 50px 0;
@@ -35,7 +33,7 @@ main{
       padding: 20px;
       .hearth {
         @include gradiant-hearth;
-        margin: 15px;
+        margin: 10px;
       }
       @media (min-width: 992px) {
         position: inherit;
@@ -138,7 +136,6 @@ main{
             animation: slide-out 0.8s forwards;
             span {
               transform: rotate(0);
-              transition: all 0.8s ease-in-out;
             }
           }
         }
