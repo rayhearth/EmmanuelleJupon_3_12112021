@@ -1,6 +1,6 @@
 # Oh-my-Food
 
-
+![GitHub repo size](https://github.com/rayhearth/Oh-my-Food/blob/master/img/ohmyfood_logo.svg)
 Maquettage d'un site de commande de repas en ligne et ajout d'animations
 <br>
 Le site est en mobile first.
