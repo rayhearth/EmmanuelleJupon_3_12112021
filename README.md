@@ -1,6 +1,6 @@
 # Oh-my-Food
 
-<img src="https://github.com/rayhearth/p14-hrnet/blob/master/public/" alt="Logo HRnet" width="100px"></img>
+<img src="https://github.com/rayhearth/Oh-my-Food/blob/master/img/ohmyfood_logo.svg/" alt="Logo Oh my food" width="100px"></img>
 
 Maquettage d'un site de commande de repas en ligne et ajout d'animations
 <br>
