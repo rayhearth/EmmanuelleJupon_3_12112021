@@ -1,5 +1,3 @@
-# Oh-my-Food
-
 <img src="https://github.com/rayhearth/Oh-my-Food/blob/master/img/ohmyfood_logo.svg#gh-light-mode-only" alt="Logo Oh my food" width="200px"></img>
 <img src="https://github.com/rayhearth/Oh-my-Food/blob/master/img/ohmyfood_logo_white.svg#gh-dark-mode-only" alt="Logo Oh my food" width="200px"></img>
 
